@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Google Sign in PoC</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script>
+        function onGoogleSignIn(gResponse) {
+            console.log(gResponse)
+        }
+    </script>
+</head>
+
+<body>
+    <div id="g_id_onload" data-client_id="<clientid goes here>"
+        data-ux_mode="popup" data-callback="onGoogleSignIn" data-auto_select="true" data-close_on_tap_outside="false">
+    </div>
+</body>
+</html>
